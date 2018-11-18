@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // Eléments de la Navbar 
   var toggleHeader = document.querySelector('.toggle-mobile');
   var sideNav = document.querySelector('.side-nav');
-  var closeSideNavButton = document.querySelector('.close-mobile');
 
   // On translate/fait apparaître la side-nav lors du clique sur l'élément toggleHeader
   toggleHeader.addEventListener('click', function() {
@@ -22,10 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
       closeSideNav();
     }
   });
-
-  // On ferme également la side-nav lors d'un click sur le bouton en croix de la side nav
-  closeSideNavButton.addEventListener('click', closeSideNav);
-  closeSideNavButton.addEventListener('touchmove', closeSideNav); // L'événement "touchmove" permet de fermer la side-nav au moindre touché sur mobile
 
   /**
    * Permet de fermer la side-nav, en lui faisant une translation et en mettant un display none à l'overlay

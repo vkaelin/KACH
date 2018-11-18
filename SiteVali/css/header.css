@@ -1,0 +1,159 @@
+/* Custom Header */
+.header {
+  height: 100px;
+  background: #fff;
+
+  position: relative;
+}
+
+.header .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-100%);
+}
+
+.header .main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  text-align: center;
+  line-height: 100px;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav li a {
+  font-family: 'ABeeZee', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgba(122,122,122,.93);
+  letter-spacing: 2px;
+  font-weight: 400;
+
+  display: block;
+  padding: 0 1em;
+}
+
+.main-nav li a:hover {
+  color: #01107e;
+  text-decoration: none;
+}
+
+.main-nav .hole {
+  width: 140px;
+}
+
+@media screen and (max-width: 1000px) { /* texte en dessous */
+  .header {
+    height: 150px;
+  }
+  .main-nav .hole {
+    width: 0;
+  }
+
+  .header .logo {
+    transform: translateX(-50%);
+  }
+
+  .header .main-nav li {
+    margin-top: 70px;
+  }
+}
+
+/* Header responsive */
+.toggle-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 780px) { 
+  .header .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .toggle-mobile {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 10000000;
+
+    display: block;
+    color: #01107e;
+    font-size: 27px;
+  }
+  .header .main-nav {
+    display: none;
+  }
+}
+
+/* Side nav */
+.side-nav {
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgba(255,255,255,.97);
+ 
+  transform: translateX(-100%);
+  transition:  all 0.5s;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+  margin-top: calc((100vh - 100%) / 2); /* Centrer verticalement */
+}
+
+.side-nav .logo-wrapper {
+  width: 100px;
+  margin: 0 auto;
+}
+
+#side-nav__logo {
+  display: block;
+  width: 100px;
+  margin-top: 25px; /* Mettre à la même hauteur que celui en dessous */
+}
+
+.side-nav .img-side-nav {
+  height: 20px;
+  width: 20px;
+  background-size: 20px;
+  margin: 0 15px 0 0;
+}
+
+.side-nav li a {
+  display: block;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1em;
+  color: rgba(122,122,122,.93);
+  padding: 18px 0;
+}
+
+@media screen and (max-width: 640px) {
+  .side-nav li a {
+    font-size: 24px;
+  }
+}
+
+.side-nav li a:hover {
+  color: #01107e;
+}
+
+.activeWithJs {
+  display: none;
+}
