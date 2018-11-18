@@ -1,6 +1,30 @@
 /* CONTACT */
+.contact-first-block {
+    padding-top: 50px;
+}
+
+.infos {
+    background: #fff;
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+}
+
+.img-wrapper-CK {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-contact {
+    background: #F1F5F8;
+}
+
 #form {
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .divider {
