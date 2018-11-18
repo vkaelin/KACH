@@ -67,39 +67,65 @@
       </li>
     </ul>
   </nav>
+<main class="main-contact">
 
-  <div class="container" id="form">
+<div class="container contact-first-block">
+  <div class="divider"></div>
+    <div class="heading">
+      <h2>Equipe</h2>
+  </div>
+  <div class="row justify-content-between">
+    <div class="col-md-4 img-wrapper-CK">
+      <img class="img-fluid CK-img" src="img/CK.jpg" alt="Christian Kaelin">
+    </div>
+    <div class="col-md-5">
+      <ul class="infos p-4">
+        <li>Christian <b>KAELIN</b></li><br>
+        <li>Maîtrise fédérale CVC</li>
+        <li>Diplômé de l'IFCAM</li>
+        <li>Master BSC</li>
+        <li>(Business School Lausanne)</li><br>
+        <li>Verger de Meruz 10</li>
+        <li>1804 Corsier-sur-Vevey</li>
+        <li>Suisse</li><br>
+        <li><a href="tel:041798948939">+41 79 894 89 39</a></li>
+        <li><a href="mailto:chka@kach-conseils.ch">chka@kach-conseils.ch</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container" id="form">
     <div class="divider"></div>
     <div class="heading">
-        <h2>Contactez-moi</h2>
+        <h2>Me contactez</h2>
     </div>
     <div class="row justify-content-md-center">
         <div class="col-xl-10 col-xl-offset-1">
             <form id="contact-form" method="post" action="" role="form">
                 <div class="row">
                     <div class="col-lg-6">
-                        <label for="firstname">Prénom<span class="blue"> *</span></label>
-                        <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Votre prénom" value="">
+                        <label for="name">Prénom / Nom<span class="blue"> *</span></label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Prénom / Nom" value="">
                         <p class="comments"></p>
                     </div>
                     <div class="col-lg-6">
-                        <label for="name">Nom<span class="blue"> *</span></label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom" value="">
+                        <label for="phone">Téléphone<span class="blue"> *</span></label>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Téléphone" value="">
                         <p class="comments"></p>
                     </div>
                     <div class="col-lg-6">
                         <label for="email">Email<span class="blue"> *</span></label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Votre email" value="">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" value="">
                         <p class="comments"></p>
                     </div>
                     <div class="col-lg-6">
-                        <label for="phone">Téléphone</label>
-                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Votre téléphone" value="">
+                        <label for="object">Objet<span class="blue"> *</span></label></label>
+                        <input type="text" id="object" name="object" class="form-control" placeholder="Objet" value="">
                         <p class="comments"></p>
                     </div>
                     <div class="col-lg-12">
                         <label for="message">Message<span class="blue"> *</span></label>
-                        <textarea id="message" name="message" class="form-control" placeholder="Votre message" rows="4"></textarea>
+                        <textarea id="message" name="message" class="form-control" placeholder="Message" rows="4"></textarea>
                         <p class="comments"></p>
                     </div>
                     <div class="col-lg-12">
@@ -112,11 +138,16 @@
             </form>
         </div>
     </div>
+</main>
+  
 
   <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/contact.js"></script>
 </body>
 
 </html>
