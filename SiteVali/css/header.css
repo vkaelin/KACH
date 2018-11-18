@@ -109,7 +109,7 @@
   margin: 0;
 
   text-align: center;
-  margin-top: calc((100vh - 100%) / 2); /* Centrer verticalement */
+  margin-top: calc((100vh - 413px) / 2); /* Centrer verticalement */
 }
 
 .side-nav .logo-wrapper {
