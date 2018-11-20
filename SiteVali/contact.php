@@ -30,10 +30,10 @@
       <nav class="main-nav">
         <ul>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="contact.php">Contact</a>
           </li>
           <li>
-            <a href="#">Prestations</a>
+            <a href="prestations.html">Prestations</a>
           </li>
           <li class="hole"></li>
           <li>
@@ -54,10 +54,10 @@
     </div>
     <ul>
       <li>
-        <a href="contact.html">Contact</a>
+        <a href="contact.php">Contact</a>
       </li>
       <li>
-        <a href="#">Prestations</a>
+        <a href="prestations.html">Prestations</a>
       </li>
       <li>
         <a href="#">Conseils énergétiques</a>
@@ -67,79 +67,89 @@
       </li>
     </ul>
   </nav>
-<main class="main-contact">
+  <main class="main-contact">
 
-<div class="container contact-first-block">
-  <div class="divider"></div>
-    <div class="heading">
-      <h2>Equipe</h2>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-md-4 img-wrapper-CK">
-      <img class="img-fluid CK-img" src="img/CK.jpg" alt="Christian Kaelin">
-    </div>
-    <div class="col-md-5">
-      <ul class="infos p-4">
-        <li>Christian <b>KAELIN</b></li><br>
-        <li>Maîtrise fédérale CVC</li>
-        <li>Diplômé de l'IFCAM</li>
-        <li>Master BSC</li>
-        <li>(Business School Lausanne)</li><br>
-        <li>Verger de Meruz 10</li>
-        <li>1804 Corsier-sur-Vevey</li>
-        <li>Suisse</li><br>
-        <li><a href="tel:041798948939">+41 79 894 89 39</a></li>
-        <li><a href="mailto:chka@kach-conseils.ch">chka@kach-conseils.ch</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="container" id="form">
-    <div class="divider"></div>
-    <div class="heading">
-        <h2>Me contactez</h2>
-    </div>
-    <div class="row justify-content-md-center">
-        <div class="col-xl-10 col-xl-offset-1">
-            <form id="contact-form" method="post" action="" role="form">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <label for="name">Prénom / Nom<span class="blue"> *</span></label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Prénom / Nom" value="">
-                        <p class="comments"></p>
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="phone">Téléphone<span class="blue"> *</span></label>
-                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Téléphone" value="">
-                        <p class="comments"></p>
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="email">Email<span class="blue"> *</span></label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" value="">
-                        <p class="comments"></p>
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="object">Objet<span class="blue"> *</span></label></label>
-                        <input type="text" id="object" name="object" class="form-control" placeholder="Objet" value="">
-                        <p class="comments"></p>
-                    </div>
-                    <div class="col-lg-12">
-                        <label for="message">Message<span class="blue"> *</span></label>
-                        <textarea id="message" name="message" class="form-control" placeholder="Message" rows="4"></textarea>
-                        <p class="comments"></p>
-                    </div>
-                    <div class="col-lg-12">
-                        <p class="blue">* Ces informations sont requises</p>
-                    </div>
-                    <div class="col-lg-12">
-                        <input type="submit" class="button1" value="Envoyer">
-                    </div>
-                </div>
-            </form>
+    <div class="container contact-first-block">
+      <div class="divider"></div>
+      <div class="heading">
+        <h2>Equipe</h2>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-md-4 img-wrapper-CK">
+          <img class="img-fluid CK-img" src="img/CK.jpg" alt="Christian Kaelin">
         </div>
+        <div class="col-md-5">
+          <div class="infos">
+            <ul class="p-5">
+              <li>Christian <b>KAELIN</b></li><br>
+              <li>Maîtrise fédérale CVC</li>
+              <li>Diplômé de l'IFCAM</li>
+              <li>Master BSC</li>
+              <li>(Business School Lausanne)</li><br>
+              <li>Verger de Meruz 10</li>
+              <li>1804 Corsier-sur-Vevey</li>
+              <li>Suisse</li><br>
+              <li><a href="tel:041798948939">+41 79 894 89 39</a></li>
+              <li><a href="mailto:chka@kach-conseils.ch">chka@kach-conseils.ch</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-</main>
-  
+    <div class="container" id="form">
+      <div class="divider"></div>
+      <div class="heading">
+        <h2>CONTACTEZ NOUS</h2>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-xl-12 col-xl-offset-1">
+          <form id="contact-form" method="post" action="" role="form">
+            <div class="row">
+              <div class="col-lg-6">
+                <label for="name">Prénom / Nom *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Prénom / Nom" value="">
+                <p class="comments"></p>
+              </div>
+              <div class="col-lg-6">
+                <label for="phone">Téléphone *</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Téléphone" value="">
+                <p class="comments"></p>
+              </div>
+              <div class="col-lg-6">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" value="">
+                <p class="comments"></p>
+              </div>
+              <div class="col-lg-6">
+                <label for="object">Objet *</label></label>
+                <input type="text" id="object" name="object" class="form-control" placeholder="Objet" value="">
+                <p class="comments"></p>
+              </div>
+              <div class="col-lg-12">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Message" rows="4"></textarea>
+                <p class="comments"></p>
+              </div>
+              <div class="col-lg-2">
+                <input type="submit" class="btn btn-custom" value="Envoyer">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo" width="75" height="75">
+      </div>
+      <div class="copyright">
+        &copy; 2018 KACH - <span class="authors">Réalisé par Nicolas Kaelin et Valentin Kaelin</span>
+      </div>
+    </div>
+  </footer>
+
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
