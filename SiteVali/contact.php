@@ -37,7 +37,7 @@
           </li>
           <li class="hole"></li>
           <li>
-            <a href="#">Conseils énergétiques</a>
+            <a href="conseils.html">Conseils énergétiques</a>
           </li>
           <li>
             <a href="#">Solutions</a>
@@ -60,7 +60,7 @@
         <a href="prestations.html">Prestations</a>
       </li>
       <li>
-        <a href="#">Conseils énergétiques</a>
+        <a href="conseils.html">Conseils énergétiques</a>
       </li>
       <li>
         <a href="#">Solutions</a>
