@@ -19,9 +19,11 @@
 </head>
 
 <body>
-  <a href="#" data-activates="nav-mobile" class="toggle-mobile">
-    <i class="fa fa-bars"></i>
-  </a>
+  <button class="navbar-toggler collapsed toggle-mobile">
+    <span class="icon-bar top-bar"></span>
+    <span class="icon-bar middle-bar"></span>
+    <span class="icon-bar bottom-bar"></span>
+  </button>
   <header class="header">
     <div class="container">
       <a href="index.html" class="logo">
@@ -40,7 +42,7 @@
             <a href="conseils.html">Conseils énergétiques</a>
           </li>
           <li>
-            <a href="#">Solutions</a>
+            <a href="solutions.html">Solutions</a>
           </li>
         </ul>
       </nav>
@@ -63,7 +65,7 @@
         <a href="conseils.html">Conseils énergétiques</a>
       </li>
       <li>
-        <a href="#">Solutions</a>
+        <a href="solutions.html">Solutions</a>
       </li>
     </ul>
   </nav>
@@ -145,7 +147,8 @@
         <img src="img/logo.png" alt="logo" width="75" height="75">
       </div>
       <div class="copyright">
-        &copy; 2018 KACH - <span class="authors">Réalisé par Nicolas Kaelin et Valentin Kaelin</span>
+        &copy; 2018 KACH - <span class="authors">Réalisé par <a href="#">Nicolas Kaelin</a> et <a href="https://kalane.ch"
+            target="_blank">Valentin Kaelin</a></span>
       </div>
     </div>
   </footer>

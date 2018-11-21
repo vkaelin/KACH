@@ -1,0 +1,12 @@
+.main-prestations .card img {
+  width: auto;
+  object-fit: cover;
+}
+
+.desc {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card-deck {
+  margin-top: 64px;
+}

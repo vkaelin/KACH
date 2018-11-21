@@ -50,8 +50,13 @@
   .header {
     height: 150px;
   }
+  
   .main-nav .hole {
     width: 0;
+  }
+
+  .header .main-nav ul {
+    margin-left: 0; /* Pour re-centrer */
   }
 
   .header .main-nav li {
@@ -70,6 +75,7 @@
     align-items: center;
     height: 100%;
   }
+
   .toggle-mobile {
     position: absolute;
     top: 25px;
@@ -77,9 +83,8 @@
     z-index: 10000000;
 
     display: block;
-    color: #01107e;
-    font-size: 27px;
   }
+
   .header .main-nav {
     display: none;
   }

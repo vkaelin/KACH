@@ -1,8 +1,6 @@
 // On attend que le contenu HTML de la page soit chargé avant de lancer ce script
 document.addEventListener("DOMContentLoaded", function() {
-  /*======================
-          Header
-  ======================*/
+
   // Activer le header et la side-nav si le JS est activé
   var headerWithJS = document.querySelector('.header');
   var sideNavWithJS = document.querySelector('.side-nav.activeWithJs');
@@ -17,17 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleHeader.addEventListener('click', function() {
     if (sideNav.style.transform === 'translateX(-100%)' || sideNav.style.transform === '') { // Si la side-nav est fermée, on l'ouvre
       sideNav.style.transform = 'translateX(0px)';
+      toggleHeader.classList.remove('collapsed');
     } else {  // Si la side-nav est ouverte, on la ferme
-      closeSideNav();
+      sideNav.style.transform = 'translateX(-100%)';
+      toggleHeader.classList.add('collapsed');
     }
   });
-
-  /**
-   * Permet de fermer la side-nav, en lui faisant une translation et en mettant un display none à l'overlay
-   */
-  function closeSideNav() {
-    sideNav.style.transform = 'translateX(-100%)';
-
-  }
-
 });

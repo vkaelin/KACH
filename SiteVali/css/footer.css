@@ -14,3 +14,12 @@ footer .container {
 footer .authors {
   font-size: 13px;
 }
+
+footer .authors a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .authors a:hover {
+  text-decoration: underline;
+}
