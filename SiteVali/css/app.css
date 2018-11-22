@@ -1,9 +1,15 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=ABeeZee');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 /* CSS */
 @import url('main.css');
 @import url('header.css');
+@import url('footer.css');
 @import url('buttons.css');
 @import url('contact.css');
+@import url('homepage.css');
+@import url('conseils.css');
+@import url('prestations.css');
+@import url('toggler.css');

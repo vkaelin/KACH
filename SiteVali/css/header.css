@@ -2,14 +2,13 @@
 .header {
   height: 100px;
   background: #fff;
-
   position: relative;
 }
 
 .header .logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-100%);
+  transform: translateX(-50%);
 }
 
 .header .main-nav ul {
@@ -19,6 +18,7 @@
 
   text-align: center;
   line-height: 100px;
+  margin-left: 110px; /* Aligner le texte à l'image */
 }
 
 .main-nav li {
@@ -50,12 +50,13 @@
   .header {
     height: 150px;
   }
+  
   .main-nav .hole {
     width: 0;
   }
 
-  .header .logo {
-    transform: translateX(-50%);
+  .header .main-nav ul {
+    margin-left: 0; /* Pour re-centrer */
   }
 
   .header .main-nav li {
@@ -74,6 +75,7 @@
     align-items: center;
     height: 100%;
   }
+
   .toggle-mobile {
     position: absolute;
     top: 25px;
@@ -81,9 +83,8 @@
     z-index: 10000000;
 
     display: block;
-    color: #01107e;
-    font-size: 27px;
   }
+
   .header .main-nav {
     display: none;
   }
