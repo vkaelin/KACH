@@ -11,6 +11,10 @@
   transform: translateX(-50%);
 }
 
+.header .logo img {
+  padding: 5px;
+}
+
 .header .main-nav ul {
   margin: 0;
   padding: 0;
@@ -40,6 +44,10 @@
 .main-nav li a:hover {
   color: #01107e;
   text-decoration: none;
+}
+
+.main-nav li .active {
+  color: #01107e;
 }
 
 .main-nav .hole {
@@ -121,6 +129,7 @@
 #side-nav__logo {
   display: block;
   width: 100px;
+  padding: 5px;
   margin-top: 25px; /* Mettre à la même hauteur que celui en dessous */
 }
 
