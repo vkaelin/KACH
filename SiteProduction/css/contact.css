@@ -1,0 +1,99 @@
+/* CONTACT */
+.contact-first-block {
+    padding-top: 50px;
+}
+
+.infos {
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos ul {
+  list-style-type: none;
+  margin: 0;
+  border: 1px solid #F1F5F8;
+}
+
+.img-wrapper-CK {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CK-img {
+  border-radius: 5px;
+}
+
+.main-contact {
+    background: #F1F5F8;
+}
+
+#form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.divider {
+    width: 100px;
+    height: 2px;
+    background: #373a48;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.heading h2 {
+  font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 7px;
+    color: #373a48;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#contact-form {
+    font-size: 20px;
+    background: white;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+label {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#contact-form .form-control {
+    height: 50px;
+    font-size: 18px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+}
+
+#contact-form textarea.form-control { 
+    min-height: 100px;
+    resize: vertical;
+}
+
+.comments {
+    font-style: italic;
+    font-size: 18px;
+    color: #d82c2e;
+    height: 25px; /* Pour garder sa taille même lorsqu'il est vide */
+}
+
+.thank-you {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-weight: bold;
+    font-size: 22px;
+}

@@ -1,0 +1,29 @@
+.main-prestations {
+  background: #F1F5F8;
+}
+
+.main-prestations .card img {
+  width: auto;
+  height: 250px;
+  object-fit: cover;
+}
+
+.desc {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card-deck {
+  margin-top: 64px;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.card h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 2px;
+}
