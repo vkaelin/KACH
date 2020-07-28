@@ -23,3 +23,14 @@ footer .authors a {
 footer .authors a:hover {
   text-decoration: underline;
 }
+
+footer .logo img {
+  margin-right: 15px;
+}
+
+
+@media screen and (max-width: 500px) {
+  footer .authors {
+    display: block;
+  }
+}

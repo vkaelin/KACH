@@ -1,7 +1,7 @@
 <?php
 $array = array("name" => "", "phone" => "", "email" => "", "object" => "", "message" => "", "nameError" => "", "phoneError" => "",
     "emailError" => "", "phoneError" => "", "messageError" => "", "isSuccess" => false);
-$emailTo = "valikaelin@gmail.com";
+$emailTo = "christiankaelin1964@gmail.com";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $array["name"] = verifyInput($_POST["name"]);
     $array["phone"] = verifyInput($_POST["phone"]);
