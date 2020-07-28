@@ -87,13 +87,46 @@
               <li>Christian <b>KAELIN</b></li><br>
               <li>Maîtrise fédérale CVC</li>
               <li>Diplômé de l'IFCAM</li>
-              <li>Master BSC</li>
+              <li>MBA</li>
               <li>(Business School Lausanne)</li><br>
               <li>Verger de Meruz 10</li>
               <li>1804 Corsier-sur-Vevey</li>
               <li>Suisse</li><br>
               <li><a href="tel:041798948939">+41 79 894 89 39</a></li>
               <li><a href="mailto:chka@kach-conseils.ch">chka@kach-conseils.ch</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 row justify-content-between">
+        <div class="col-md-4 img-wrapper-CK">
+          <img class="img-fluid CK-img" src="img/NK.jpg" alt="Nicolas Kaelin">
+        </div>
+        <div class="col-md-5">
+          <div class="infos">
+            <ul class="p-5">
+              <li>Nicolas <b>KAELIN</b></li><br>
+              <li>Apprenti</li>
+              <li>Projeteur en technique du bâtiment</li>
+              <li>Option Chauffage</li><br>
+              <li><a href="mailto:nika@kach-conseils.ch">nika@kach-conseils.ch</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 row justify-content-between">
+        <div class="col-md-4 img-wrapper-CK">
+          <img class="img-fluid CK-img" src="img/VK.jpg" alt="Valentin Kaelin">
+        </div>
+        <div class="col-md-5">
+          <div class="infos">
+            <ul class="p-5">
+              <li>Valentin <b>KAELIN</b></li><br>
+              <li>Etudiant</li>
+              <li>Bachelor en développement logiciel</li>
+              <li>HEIG-VD</li>
+              <li>Responsable informatique</li><br>
+              <li><a href="mailto:vaka@kach-conseils.ch">vaka@kach-conseils.ch</a></li>
             </ul>
           </div>
         </div>
