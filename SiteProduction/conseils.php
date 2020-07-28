@@ -110,7 +110,7 @@
         <img src="img/logo-borderless.png" alt="logo" width="75" height="75">
       </div>
       <div class="copyright">
-        &copy; 2018 KACH - <span class="authors">Réalisé par <a href="#">Nicolas</a> et <a href="https://valentinkaelin.ch" target="_blank">Valentin Kaelin</a></span>
+        &copy; <?= date("Y"); ?> KACH - <span class="authors">Réalisé par <a href="#">Nicolas</a> et <a href="https://valentinkaelin.ch" target="_blank">Valentin Kaelin</a></span>
       </div>
     </div>
   </footer>
