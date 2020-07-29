@@ -131,6 +131,24 @@
           </div>
         </div>
       </div>
+      <div class="mt-4 row justify-content-between">
+        <div class="col-md-4 img-wrapper-CK">
+          <img class="img-fluid CK-img" src="img/AK.jpg" alt="Antoine Kaelin">
+        </div>
+        <div class="col-md-5">
+          <div class="infos">
+            <ul class="p-5">
+              <li>Antoine <b>KAELIN</b></li><br>
+              <li>Etudiant</li>
+              <li>Bachelor en sciences sociales</li>
+              <li>Université de Lausanne</li>
+              <li>DRH</li>
+              <!-- <br>
+              <li><a href="mailto:anka@kach-conseils.ch">anka@kach-conseils.ch</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container" id="form">
       <div class="divider"></div>
