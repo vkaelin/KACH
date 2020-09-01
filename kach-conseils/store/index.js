@@ -10,9 +10,7 @@ export const mutations = {
 
 export const actions = {
   async nuxtServerInit ({ commit }, { $prismic }) {
-    console.log('init server')
     const layout = await $prismic.api.getSingle('layout')
-    console.log(layout)
 
     commit('SET_LAYOUT_DATA', layout.data)
   }
