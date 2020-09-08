@@ -12,7 +12,6 @@
 <script>
 export default {
   async asyncData ({ $prismic, params, error, store }) {
-    console.log('hi', store.state.lang)
     try {
       const document = await $prismic.api.getSingle('homepage', { lang: store.state.lang })
       if (document) {
