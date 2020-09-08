@@ -1,18 +1,19 @@
 export default function (doc) {
+  const lang = doc.lang
   if (doc.type === 'homepage') {
-    return '/'
+    return `/${lang}/`
   }
   if (doc.type === 'prestations') {
-    return '/services'
+    return `/${lang}/services`
   }
   if (doc.type === 'conseils') {
-    return '/energy-advice'
+    return `/${lang}/energy-advice`
   }
   if (doc.type === 'solutions') {
-    return '/solutions'
+    return `/${lang}/solutions`
   }
   if (doc.type === 'contact') {
-    return '/contact'
+    return `/${lang}/contact`
   }
-  return '/'
+  return `/${lang}/`
 }
