@@ -3,10 +3,10 @@ export default function (doc) {
     return '/'
   }
   if (doc.type === 'prestations') {
-    return '/prestations'
+    return '/services'
   }
   if (doc.type === 'conseils') {
-    return '/conseils-energetiques'
+    return '/energy-advice'
   }
   if (doc.type === 'solutions') {
     return '/solutions'
