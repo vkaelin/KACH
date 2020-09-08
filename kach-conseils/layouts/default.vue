@@ -3,7 +3,7 @@
     <div>
       <header class="bg-white">
         <div class="flex justify-center py-2">
-          <prismic-link :field="layout.header_nav_items[0].link">
+          <prismic-link :field="homepageLink">
             <img class="w-24 h-24" src="/images/logo.jpg" alt="Logo" />
           </prismic-link>
         </div>
@@ -23,7 +23,7 @@
     <footer class="text-gray-100 bg-gray-900">
       <div class="container py-8 mx-auto">
         <div class="flex items-center justify-between">
-          <prismic-link :field="layout.header_nav_items[0].link">
+          <prismic-link :field="homepageLink">
             <img class="w-12 h-12" src="/images/logo.jpg" alt="Logo" />
           </prismic-link>
           <!-- <nav>
@@ -72,15 +72,20 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  middleware: 'lang',
-
   data () {
     return {
       menuOpen: false
     }
   },
 
-  computed: mapState(['lang', 'layout']),
+  computed: {
+    homepageLink () {
+      if (!this.layout || !this.layout.header_nav_items) { return }
+
+      return this.layout.header_nav_items[0].link
+    },
+    ...mapState(['lang', 'layout'])
+  },
 
   watch: {
     '$route.path' () {
