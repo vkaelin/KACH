@@ -49,10 +49,17 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/prismic'
+    '@nuxtjs/prismic',
+    '@nuxtjs/google-fonts'
   ],
   prismic: {
     endpoint: 'https://kach-conseils.cdn.prismic.io/api/v2'
+  },
+  googleFonts: {
+    families: {
+      Inter: true
+    },
+    display: 'swap'
   },
   /*
   ** Nuxt.js modules
