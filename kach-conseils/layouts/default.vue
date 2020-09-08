@@ -72,6 +72,8 @@
 <script>
 import { mapState } from 'vuex'
 export default {
+  middleware: 'lang',
+
   data () {
     return {
       menuOpen: false
