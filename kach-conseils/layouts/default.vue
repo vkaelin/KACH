@@ -284,7 +284,10 @@ export default {
 
       return this.layout.header_nav_items[0].link
     },
-    ...mapState(['lang', 'layout'])
+    lang () {
+      return this.$route.params.lang ? this.$route.params.lang : this.$prismic.api.data.languages[0].id
+    },
+    ...mapState(['layout'])
   },
 
   watch: {
