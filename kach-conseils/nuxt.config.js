@@ -48,31 +48,7 @@ export default {
     '@nuxtjs/google-fonts'
   ],
   prismic: {
-    endpoint: 'https://kach-conseils.cdn.prismic.io/api/v2',
-    apiOptions: {
-      routes: [
-        {
-          type: 'homepage',
-          path: '/:lang/'
-        },
-        {
-          type: 'prestations',
-          path: '/:lang/services'
-        },
-        {
-          type: 'conseils',
-          path: '/:lang/energy-advice'
-        },
-        {
-          type: 'solutions',
-          path: '/:lang/solutions'
-        },
-        {
-          type: 'contact',
-          path: '/:lang/contact'
-        }
-      ]
-    }
+    endpoint: 'https://kach-conseils.cdn.prismic.io/api/v2'
   },
   googleFonts: {
     families: {
