@@ -48,7 +48,8 @@ export default {
     '@nuxtjs/google-fonts'
   ],
   prismic: {
-    endpoint: 'https://kach-conseils.cdn.prismic.io/api/v2'
+    endpoint: 'https://kach-conseils.cdn.prismic.io/api/v2',
+    disableGenerator: false
   },
   googleFonts: {
     families: {

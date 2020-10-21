@@ -205,38 +205,21 @@
                 <label for="language" class="sr-only">{{
                   layout.footer_nav_titles[1].text
                 }}</label>
-                <div class="relative">
-                  <select
-                    @change="switchLang"
-                    id="language"
-                    class="block w-full py-2 pl-3 pr-10 text-base leading-6 text-white bg-gray-700 border border-transparent rounded-md appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
+                <div class="space-y-2">
+                  <nuxt-link
+                    v-for="({ text, value }, index) in layout.lang_items"
+                    :key="index"
+                    @click.native="updateLayout(value)"
+                    :to="{ name: routeName, params: { lang: value } }"
+                    class="block w-full py-2 pl-3 pr-10 text-base leading-6 text-white border border-transparent rounded-md appearance-none sm:text-sm sm:leading-5"
+                    :class="{
+                      'bg-gray-900': currentLang === value,
+                      'bg-gray-700 cursor-pointer focus:outline-none focus:shadow-outline-blue focus:border-blue-300':
+                        currentLang !== value,
+                    }"
                   >
-                    <option
-                      v-for="({ text, value }, index) in layout.lang_items"
-                      :key="index"
-                      :value="value"
-                      :selected="lang === value"
-                    >
-                      {{ text }}
-                    </option>
-                  </select>
-                  <div
-                    class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none"
-                    aria-hidden="true"
-                  >
-                    <svg
-                      class="w-4 h-4 text-white"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
+                    <span>{{ text }}</span>
+                  </nuxt-link>
                 </div>
               </fieldset>
             </form>
@@ -284,8 +267,11 @@ export default {
 
       return this.layout.header_nav_items[0].link
     },
-    lang () {
+    currentLang () {
       return this.$route.params.lang || this.$prismic.api.data.languages[0].id
+    },
+    routeName () {
+      return this.$route.name === 'index' ? 'lang' : this.$route.name
     },
     ...mapState(['layout'])
   },
@@ -297,15 +283,8 @@ export default {
   },
 
   methods: {
-    switchLang (event) {
-      if (event.target.options.selectedIndex > -1) {
-        const newLang = event.target.options[event.target.options.selectedIndex].value
-        this.$store.dispatch('getLayout', newLang)
-        this.$router.push({ name: this.$route.name, params: { lang: newLang } })
-      }
-    },
-    toggleMenu () {
-      this.menuOpen = !this.menuOpen
+    updateLayout (newLang) {
+      this.$store.dispatch('getLayout', newLang)
     }
   },
 
