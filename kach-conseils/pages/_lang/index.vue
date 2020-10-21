@@ -96,7 +96,7 @@
 <script>
 export default {
   async asyncData ({ $prismic, params, error, store }) {
-    const lang = params.lang ? params.lang : $prismic.api.data.languages[0].id
+    const lang = params.lang || $prismic.api.data.languages[0].id
     try {
       const document = await $prismic.api.getSingle('homepage', { lang })
       if (document) {

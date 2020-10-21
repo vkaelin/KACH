@@ -285,7 +285,7 @@ export default {
       return this.layout.header_nav_items[0].link
     },
     lang () {
-      return this.$route.params.lang ? this.$route.params.lang : this.$prismic.api.data.languages[0].id
+      return this.$route.params.lang || this.$prismic.api.data.languages[0].id
     },
     ...mapState(['layout'])
   },
@@ -300,7 +300,7 @@ export default {
     switchLang (event) {
       if (event.target.options.selectedIndex > -1) {
         const newLang = event.target.options[event.target.options.selectedIndex].value
-        this.$store.dispatch('switchLanguage', newLang)
+        this.$store.dispatch('getLayout', newLang)
         this.$router.push({ name: this.$route.name, params: { lang: newLang } })
       }
     },

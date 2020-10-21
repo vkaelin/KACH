@@ -9,13 +9,13 @@ export const mutations = {
 }
 
 export const actions = {
-  async getLayout ({ commit }, params) {
-    const lang = params.lang ? params.lang : this.$prismic.api.data.languages[0].id
+  async getLayout ({ commit }, paramsLang) {
+    const lang = paramsLang || this.$prismic.api.data.languages[0].id
     const layout = await this.$prismic.api.getSingle('layout', { lang })
 
     commit('SET_LAYOUT_DATA', layout.data)
   },
   async nuxtServerInit ({ dispatch }, { params }) {
-    await dispatch('getLayout', params)
+    await dispatch('getLayout', params.lang)
   }
 }
