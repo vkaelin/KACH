@@ -1,5 +1,6 @@
 export default function (doc) {
   const lang = doc.lang
+  // console.log(doc.type)
   if (doc.type === 'homepage') {
     return `/${lang}/`
   }
@@ -12,8 +13,9 @@ export default function (doc) {
   if (doc.type === 'solutions') {
     return `/${lang}/solutions`
   }
-  if (doc.type === 'contact') {
-    return `/${lang}/contact`
+  if (doc.type === 'page') {
+    return `/${doc.lang}/${doc.uid}`
   }
-  return `/${lang}/`
+
+  return '/not-found'
 }

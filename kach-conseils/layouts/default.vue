@@ -2,7 +2,10 @@
   <div>
     <!-- Header -->
     <div class="relative overflow-hidden bg-white">
-      <div class="hidden lg:block lg:absolute lg:inset-0">
+      <div
+        v-if="!$route.params.uid"
+        class="hidden lg:block lg:absolute lg:inset-0"
+      >
         <svg
           class="absolute top-0 transform translate-x-64 -translate-y-8 left-1/2"
           width="640"
