@@ -25,7 +25,8 @@ export default {
         error({ statusCode: 404, message: 'Page not found' })
       }
     } catch (e) {
-      console.log(e)
+      // console.log(e)
+      error({ statusCode: 404, message: 'Page not found' })
     }
   },
 

@@ -1,6 +1,5 @@
 export default function (doc) {
   const lang = doc.lang
-  // console.log(doc.type)
   if (doc.type === 'homepage') {
     return `/${lang}/`
   }
