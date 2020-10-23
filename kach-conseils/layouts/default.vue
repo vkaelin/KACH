@@ -168,42 +168,39 @@
     <!-- Footer -->
     <footer class="bg-gray-800">
       <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8">
-        <div class="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
-          <div class="grid grid-cols-2 gap-8 xl:col-span-4">
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <prismic-link :field="homepageLink">
-                  <img class="w-20 h-20" src="/images/logo.jpg" alt="Logo" />
-                </prismic-link>
-              </div>
-              <div class="mt-12 md:mt-0">
-                <h4
-                  class="text-sm font-semibold leading-5 tracking-wider text-gray-400 uppercase"
-                >
-                  {{ layout.footer_nav_titles[0].text }}
-                </h4>
-                <ul class="mt-4 space-y-4">
-                  <li
-                    v-for="({ link, text }, index) in layout.header_nav_items"
-                    :key="index"
-                  >
-                    <prismic-link
-                      class="text-base leading-6 text-gray-300 hover:text-white"
-                      :field="link"
-                    >{{ text }}</prismic-link>
-                  </li>
-                </ul>
-              </div>
+        <div class="pb-8 md:flex md:justify-between">
+          <div class="sm:grid sm:grid-cols-2 sm:gap-16">
+            <div>
+              <prismic-link :field="homepageLink">
+                <img class="w-20 h-20" src="/images/logo.jpg" alt="Logo" />
+              </prismic-link>
             </div>
-            <div class="md:grid md:grid-cols-2 md:gap-8"></div>
+            <div class="mt-12 sm:mt-0">
+              <h4
+                class="text-sm font-semibold leading-5 tracking-wider text-gray-400 uppercase"
+              >
+                {{ layout.footer_nav_titles[0].text }}
+              </h4>
+              <ul class="mt-4 space-y-4">
+                <li
+                  v-for="({ link, text }, index) in layout.header_nav_items"
+                  :key="index"
+                >
+                  <prismic-link
+                    class="text-base leading-6 text-gray-300 hover:text-white"
+                    :field="link"
+                  >{{ text }}</prismic-link>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="mt-12 xl:mt-0">
+          <div class="mt-12 md:mt-0">
             <h4
               class="text-sm font-semibold leading-5 tracking-wider text-gray-400 uppercase"
             >
               {{ layout.footer_nav_titles[1].text }}
             </h4>
-            <form class="mt-4 space-y-4 sm:max-w-xs">
+            <form class="mt-4 space-y-4">
               <fieldset class="w-full">
                 <label for="language" class="sr-only">{{
                   layout.footer_nav_titles[1].text
@@ -214,10 +211,10 @@
                     :key="index"
                     @click.native="updateLayout(value)"
                     :to="{ name: routeName, params: { lang: value } }"
-                    class="block w-full py-2 pl-3 pr-10 text-base leading-6 text-white border border-transparent rounded-md appearance-none sm:text-sm sm:leading-5"
+                    class="block w-full py-2 pl-3 pr-10 text-base leading-6 text-white border border-transparent rounded-md appearance-none md:w-52 sm:text-sm sm:leading-5"
                     :class="{
-                      'bg-gray-900': currentLang === value,
-                      'bg-gray-700 cursor-pointer focus:outline-none focus:shadow-outline-blue focus:border-blue-300':
+                      'bg-gray-900 focus:outline-none': currentLang === value,
+                      'bg-gray-700 cursor-pointer hover:bg-gray-600 focus:outline-none focus:shadow-outline-blue focus:border-blue-300':
                         currentLang !== value,
                     }"
                   >
@@ -271,7 +268,10 @@ export default {
       return this.layout.header_nav_items[0].link
     },
     currentLang () {
-      return this.$route.params.lang || this.$prismic.api.data.languages[0].id
+      return this.langExists ? this.$route.params.lang : this.$prismic.api.data.languages[0].id
+    },
+    langExists () {
+      return this.$route.params.lang && this.$prismic.api.data.languages.some(l => l.id === this.$route.params.lang)
     },
     routeName () {
       return this.$route.name === 'index' ? 'lang' : this.$route.name
